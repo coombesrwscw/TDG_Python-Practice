@@ -1,18 +1,19 @@
 
 #This is a program that asks the user to create a username and password, before helping make sure that the password is strong.
 
-userid=input("Please enter your username: ")
-useridyn=input("Are you sure you want your password to be {}? (yes/no)".format(userid))
-if useridyn == "yes":
+userid=input("Please enter your preferred username: ")
+useridyn=input("Are you sure you want your username to be {}? (y/n) ".format(userid))
+if useridyn == "y":
     print("Okay, your username is: " + userid)
-if useridyn == "no":
+if useridyn == "nrub":
     userid=input("Please enter your new username: ")
-    print("Okay, your username is now " + userid)    
+    userid=input("Okay, your username is now {}, is that correct? (y/n) ".format(userid))
+
 passw=input("Now, please create a password: ")
 len(passw)
 if len(passw) < 6:
     print("Your password is kinda weak...")
-    retrypassyn=input("Do you wnat to change it? (yes/no)")
+    retrypassyn=input("Do you wnat to change it? (y/n) ")
     if retrypassyn == "yes":
         startpass=input("Please redo your password: ")
     else:
