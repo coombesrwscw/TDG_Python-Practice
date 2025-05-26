@@ -5,7 +5,7 @@ userid=input("Please enter your preferred username: ")
 useridyn=input("Are you sure you want your username to be {}? (y/n) ".format(userid))
 if useridyn == "y":
     print("Okay, your username is: " + userid)
-if useridyn == "nrub":
+if useridyn == "n":
     userid=input("Please enter your new username: ")
     userid=input("Okay, your username is now {}, is that correct? (y/n) ".format(userid))
 
