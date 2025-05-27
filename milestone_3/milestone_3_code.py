@@ -4,25 +4,15 @@
 #intro
 print("Hello! This is a quiz on extremely basic Python code. Enjoy!")
 
-#username stuff
-userid=input("Please enter your preferred username: ")
-useridyn=input("Are you sure you want your username to be {}? (y/n) ".format(userid))
-if useridyn == "y":
-    print("Okay, your username is: " + userid)
-if useridyn == "n":
-    userid=input("Please enter your new username: ")
-    userid=input("Okay, your username is now {}, is that correct? (y/n) ".format(userid))
-    if useridyn == "y":
-        print("Okay, your username is: " + userid)
-    if useridyn == "n":
-        userid=input("Please enter your new username: ")
-        useridyn=input("Okay, your username is now {}, is that correct? (y/n) ".format(userid))    
-    if useridyn == "y":
-                print("Okay, your username is: " + userid)
-    elif useridyn == "n":
-                print("You're annoying, goodbye.")
-                exit()
-#password stuff
-passw=input("Now, please create a password: ")
-
 #question 1
+q1=input("First question: What is the purpose of the 'print' function in Python? \n a) To display output to the console \n b) To take input from the user \n c) To define a variable \n d) To create a loop \n Please enter your answer (a/b/c/d): ")
+if q1.lower() == "a":
+    print("Correct! The 'print' function is used to display output to the console.")
+else:
+    retry1=input("Incorrect. Would you like to know the correct answer? ")
+    if retry1.lower() in ["yes", "y", "okay""ok", "go ahead", "sure"]:
+        print("The correct answer is a) To display output to the console.")
+    else:
+        print("OK. Let's continue!")
+
+#question 2
