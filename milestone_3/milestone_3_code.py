@@ -16,3 +16,12 @@ else:
         print("OK. Let's continue!")
 
 #question 2
+q2=input("Second question: What is the difference between a string and list? \n a) Strings contain multiple variables, but lists only have one. \n b) There is no difference. \n c) Lists contain multiple variables, but strings only have one. \n d) None of the above. \n Please enter your answer (a/b/c/d): ")
+if q2.lower() == "c":
+    print("Correct! Lists can contain multiple items, while strings are a single sequence of characters.")
+else:
+    retry2=input("Incorrect. Would you like to know the correct answer? ")
+    if retry2.lower() in ["yes", "y", "okay""ok", "go ahead", "sure"]:
+        print("The correct answer is c) Lists contain multiple variables, but strings only have one.")
+    else:
+        print("OK. Let's continue!")
