@@ -25,3 +25,16 @@ else:
         print("The correct answer is c) Lists contain multiple variables, but strings only have one.")
     else:
         print("OK. Let's continue!")
+
+#question 3
+q3=input("Third question: What is the purpose of putting text after a hashtag in Python? \n a) To save data to the repository \n b) To define a variable's syntax \n c) To give info about sections of the code to future editors and comment on details of the code \n d) To help the device know what to do with certain peices of code \n Please enter your answer (a/b/c/d): ")
+if q3.lower() == "c":
+    print("Correct! Text after a hashtag is called a comment, which helps explain the code to others, or yourself if you're worried about being forgetful.")
+else:
+    retry3=input("Incorrect. Would you like to know the correct answer? ")
+    if retry3.lower() in ["yes", "y", "okay""ok", "go ahead", "sure"]:
+        print("The correct answer is c) To give info about sections of the code to future editors and comment on details of the code.")
+    else:
+        print("OK. I can't be bothered writing more code, so thats the end of my quiz!")
+#end of quiz
+print("Thank you for taking the quiz! I hope you learned something new about Python basics. Goodbye!")
