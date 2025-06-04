@@ -36,16 +36,16 @@ else:
     else:
         print("OK. I can't be bothered writing more questions, so thats the end of my quiz!")
 #end of quiz
-score = 0
+score = 3
 if q1.lower() == ["b", "c", "d"] or q2.lower() == ["a", "b", "d"] or q3.lower() == ["a", "b", "d"]:
     print("You didn't get all the questions right, but that's okay! Keep practicing and you'll improve.")
 if q1.lower() == "a" and q2.lower() == "c" and q3.lower() == "c":
     print("Congratulations! You got all the questions right!")
 if q1.lower() == ["b", "c", "d"]:
-    score = score + 1
+    score = score - 1
 if q2.lower() == ["a", "b", "d"]:
-    score = score + 1  
+    score = score - 1  
 if q3.lower() == ["a", "b", "d"]:
-    score = score + 1
+    score = score - 1
 print("Your score is {} out of 3." .format(score))
 print("Thank you for taking the quiz! I hope you learned something new about Python basics. Goodbye!")
