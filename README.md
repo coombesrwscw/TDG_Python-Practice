@@ -1,1 +1,1 @@
-Some python practice that I'm doing for digitech.
+Some python practice that I'm doing for digitech class.
